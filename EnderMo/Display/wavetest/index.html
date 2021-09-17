@@ -8,14 +8,14 @@
         <link rel="stylesheet" href="./wstyle.css" />
         <link rel="stylesheet" href="./ribbon.css" />
         <!-- 基于wavesurfer.js -->
-        <script src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.js"></script>
+        <script src="./wavemin.js"></script>
         <!-- microphone plugin -->
-        <script src="https://unpkg.com/wavesurfer.js/dist/plugin/wavesurfer.microphone.js"></script>
+        <script src="./mic.js"></script>
         <!-- 主要部分 -->
         <script src="index.js"></script>
         <!-- highlight.js for syntax highlighting in this example -->
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
-	    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	    <link rel="stylesheet" href="./sD.css">
+	    <script src="./hlight.js"></script>
 	    <script>hljs.initHighlightingOnLoad();</script>
     </head>
 
@@ -28,13 +28,7 @@
                 <div id="waveform"></div>
 
                 <div class="controls">
-                    <button id="micBtn" class="btn btn-primary" data-action="start">
-                        Microphone:
-                        <i class="glyphicon glyphicon-play"></i>
-                        Start
-                        /
-                        <i class="glyphicon glyphicon-stop"></i>
-                        Stop
+                    <button id="micBtn" class="btn btn-primary" data-action="start">开始/停止获取
                     </button>
                 </div>
             </div>
